@@ -383,6 +383,11 @@ footer p {
 }
 
 .footer-container {
+    background-color: black;
+    color: grey;
+}
+
+.footer-container-item {
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -391,19 +396,27 @@ footer p {
 }
 
 .footer-telefono {
-    width: 200px;
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-redes {
+    width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.footer-redes {
-    width: 200px;
+.footer-container-copyright {
+    padding: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: wrap;
 }
 
 
