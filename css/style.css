@@ -34,16 +34,24 @@ p {
 }
 
 
-/* elementos genéricos */
+/* bootstrap sobreescritos */
 
-.boton {
-    background-color: blue;
-    text-align: center;
-    font-size: 1.5rem;
-    color: white;
-    width: 100px;
-    height: 40px;
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    align-items: center;
 }
+
+.btn {
+    font-size: 16px;
+}
+
+.form-control {
+    font-size: 16px;
+}
+
+
+/* elementos genéricos */
 
 .subtitulos {
     text-align: center;
@@ -54,53 +62,25 @@ p {
 /* header */
 
 header {
-    border: 2px solid greenyellow;
-    background-color: #146C94;
-    /* le indicamos a header que lo vamos a trabajar como flex box */
-    display: flex;
-    /* la dirección es de fila (por defecto) */
-    flex-direction: row;
-    /* trabaja con el espacio disponible */
-    justify-content: space-between;
     position: sticky;
     top: 0px;
 }
 
 .logo {
-    margin-top: 8px;
     margin-left: 10px;
-    margin-bottom: 8px;
+    margin-right: 20px;
 }
 
 .logo img {
     width: 80px;
 }
 
-.iconos-header-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 10px;
-}
-
 .iconos-header {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-header ul {
-    list-style-type: none;
-    margin: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav {
-    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 nav a {
@@ -148,9 +128,8 @@ nav a {
 }
 
 .presentacion-item {
-    border: 1px solid #fff;
     width: 300px;
-    height: 600px;
+    height: 610px;
 }
 
 .presentacion-item img {
@@ -177,7 +156,6 @@ nav a {
 }
 
 .productos-destacados-item {
-    border: 1px solid #fff;
     width: 300px;
     height: 300px;
 }
@@ -202,7 +180,6 @@ nav a {
 }
 
 .productos-recomendados-item {
-    border: 1px solid #fff;
     width: 250px;
     height: 400px;
 }
@@ -227,7 +204,6 @@ nav a {
 }
 
 .comentarios-item {
-    border: 1px solid #fff;
     width: 250px;
     height: 300px;
 }
@@ -377,6 +353,8 @@ nav a {
 
 footer img {
     width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 footer p {
@@ -397,7 +375,6 @@ footer p {
 }
 
 .footer-telefono {
-    border: 2px solid greenyellow;
     width: 170px;
     display: flex;
     flex-direction: row;
@@ -406,7 +383,6 @@ footer p {
 }
 
 .footer-redes {
-    border: 2px solid greenyellow;
     width: 300px;
     display: flex;
     flex-direction: row;
