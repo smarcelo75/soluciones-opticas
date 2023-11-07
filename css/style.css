@@ -53,6 +53,10 @@ p {
 
 /* elementos genéricos */
 
+.titulo {
+    margin: 35px 35px 35px 0px;
+}
+
 .subtitulos {
     text-align: center;
     margin: 25px;
@@ -307,19 +311,19 @@ nav a {
     grid-template-columns: 25% 40% 25%;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-rows: 150px 300px 300px;
-    border: 2px solid greenyellow;
-    justify-content: center;
+    justify-content: space-between;
     /* alineacion de grids */
     justify-items: center;
     align-items: center;
     /* espacio entre filas */
-    row-gap: 5px;
+    row-gap: 30px;
     /* espacio entre columnas */
     column-gap: 10px;
+    margin-bottom: 30px;
 }
 
 .grid-container img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
 }
 
@@ -342,10 +346,12 @@ nav a {
 
 .grid-texto-2 {
     grid-area: texto2;
+    text-align: right;
 }
 
 .grid-texto-3 {
     grid-area: texto3;
+    text-align: justify;
 }
 
 
@@ -428,6 +434,7 @@ footer p {
     .comentarios-item {
         width: 100%;
     }
+    /* donde estamos */
     .donde-estamos {
         flex-direction: column;
     }
@@ -440,18 +447,15 @@ footer p {
     }
     /* quienes somos */
     .grid-container {
-        grid-template-areas: "img1" "texto1" "texto2";
+        grid-template-areas: "img2" "texto1" "texto2" "img3" "texto3";
         grid-template-columns: 90%;
-        grid-template-rows: 100px repeat(2, 300px);
+        grid-template-rows: 100px 150px repeat(3, 200px);
     }
-    .grid-img-2 {
+    .grid-img-1 {
         display: none;
     }
-    .grid-img-3 {
-        display: none;
-    }
-    .grid-texto-3 {
-        display: none;
+    .grid-texto-2 {
+        text-align: justify;
     }
     /*footer*/
     .footer-container-item {
@@ -467,6 +471,7 @@ footer p {
 /* tablet */
 
 @media only screen and (min-width:481px) and (max-width:978px) {
+    /* donde estamos */
     .donde-estamos {
         flex-direction: column;
     }
@@ -476,5 +481,17 @@ footer p {
     }
     .donde-estamos-mapa {
         height: 400px;
+    }
+    /* quienes somos */
+    .grid-container {
+        grid-template-areas: "img2" "texto1" "texto2" "img3" "texto3";
+        grid-template-columns: 90%;
+        grid-template-rows: 100px 150px repeat(3, 200px);
+    }
+    .grid-img-1 {
+        display: none;
+    }
+    .grid-texto-2 {
+        text-align: justify;
     }
 }
