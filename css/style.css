@@ -302,6 +302,48 @@ nav a {
 }
 
 
+/* como llegar */
+
+.como-llegar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.como-llegar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.como-llegar-mapa {
+    width: 60%;
+    height: 400px;
+    padding: 30px;
+}
+
+.como-llegar-texto {
+    width: 40%;
+    padding: 30px;
+}
+
+.como-llegar-texto p {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.como-llegar-contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.como-llegar-contenedor img {
+    margin: 10px;
+}
+
+
 /* quienes somos*/
 
 .grid-container {
@@ -481,6 +523,23 @@ footer p {
     }
     .donde-estamos-mapa {
         height: 400px;
+    }
+    /* como llegar */
+    .como-llegar {
+        flex-direction: column;
+    }
+    .como-llegar-texto {
+        width: 100%;
+        padding: 5px 5px 10px;
+    }
+    .como-llegar-mapa {
+        width: 100%;
+        height: 400px;
+    }
+    .como-llegar-contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     /* quienes somos */
     .grid-container {
