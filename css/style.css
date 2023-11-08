@@ -451,6 +451,15 @@ footer p {
     flex-wrap: wrap;
 }
 
+.footer-container-copyright-dev {
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 /* mobile */
 
@@ -511,6 +520,11 @@ footer p {
     }
     .footer-container-copyright {
         align-items: center;
+    }
+    .footer-container-copyright-dev {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }
 
