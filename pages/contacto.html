@@ -55,47 +55,74 @@
         </nav>
     </header>
     <main>
-        <h1>Contacto</h1>
-        <section class="infoContacto">
-            <img src="../images/contacto.webp" alt="Contacto" class="imagenContacto">
-            <div>
-                <img src="../images/direccion.png" alt="Dirección" class="imagenIconoContacto">
-                <p>Tucumán 10, Centro</p>
-                <p>Ciudad de Córdoba</p>
+        <div class="container">
+            <h1 class="titulo">Contacto</h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="row imagenContacto">
+                            <img src="../images/contacto.webp" alt="Contacto">
+                        </div>
+                        <div class="row">
+                            <section class="contacto-texto">
+                                <div class="contacto-contenedor">
+                                    <img src="../images/direccion.png" alt="Dirección" class="imagenIconoContacto">
+                                    <p>Tucumán 10 - Centro - Ciudad de Córdoba</p>
+                                </div>
+                                <div class="contacto-contenedor">
+                                    <img src="../images/direccion.png" alt="Dirección" class="imagenIconoContacto">
+                                    <p>Lunes a viernes de 9 a 18:30hs y sábados de 9 a 13:30hs</p>
+                                </div>
+                                <div class="contacto-contenedor">
+                                    <img src="../images/telefono.png" alt="Telefono" class="imagenIconoContacto">
+                                    <p>+54 351 818-7610</p>
+                                </div>
+                                <div class="contacto-contenedor">
+                                    <img src="../images/email.png" alt="Email" class="imagenIconoContacto">
+                                    <p>atencionclientes@soluciones-opticas.com</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <section>
+                            <h2>Dejanos un mensaje y nos contactamos</h2>
+                            <form class="row g-3 formulario">
+                                <div class="col-md-6">
+                                    <label for="inputNombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="inputNombre">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputApellido" class="form-label">Apellido</label>
+                                    <input type="text" class="form-control" id="inputApellido">
+                                </div>
+                                <div class="col-md-8">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputTelefono" class="form-label">Telefono</label>
+                                    <input type="number" class="form-control" id="inputTelefono">
+                                </div>
+                                <div class="col-12">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
             </div>
-            <p>Lunes a viernes de 9 a 18:30hs</p>
-            <p>Sábados de 9 a 13:30hs</p>
-            <div>
-                <img src="../images/telefono.png" alt="Telefono" class="imagenIconoContacto">
-                <p>+54 351 818-7610</p>
-            </div>
-            <div>
-                <img src="../images/email.png" alt="Email" class="imagenIconoContacto">
-                <p>atencionclientes@optica1hora.com</p>
-            </div>
-        </section>
-        <section>
-            <h2>Dejanos un mensaje y nos contactamos</h2>
-            <form action="">
-                <div>
-                    <input type="text" name="" id="" placeholder="Nombre">
-                </div>
-                <div>
-                    <input type="text" name="" id="" placeholder="Apellido">
-                </div>
-                <div>
-                    <input type="email" name="" id="" placeholder="email">
-                </div>
-                <div>
-                    <input type="number" name="" id="" placeholder="Telefono">
-                </div>
-                <div>
-                    <p>Mensaje</p>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
-                </div>
-                <input type="submit" value="Enviar" class="boton">
-            </form>
-        </section>
+
+
+
+        </div>
+
+
     </main>
     <footer class="footer-container">
         <div class="footer-container-item">

@@ -50,6 +50,10 @@ p {
     font-size: 16px;
 }
 
+.form-label {
+    font-size: 16px;
+}
+
 
 /* elementos genéricos */
 
@@ -283,22 +287,37 @@ nav a {
 
 /* contacto */
 
-.infoContacto {
-    width: 50%;
-    background-color: #F6F4EB;
-}
-
 .imagenContacto {
-    width: 80%;
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
 }
 
 .imagenIconoContacto {
     width: 30px;
 }
 
-.infoContacto p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
+.contacto-texto {
+    width: 100%;
+    padding: 30px;
+}
+
+.contacto-texto p {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.contacto-contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.contacto-contenedor img {
+    margin: 10px;
+}
+
+.formulario {
+    margin-bottom: 30px;
 }
 
 
@@ -327,20 +346,6 @@ nav a {
 .como-llegar-texto {
     width: 40%;
     padding: 30px;
-}
-
-.como-llegar-texto p {
-    text-align: left;
-    font-size: 1.5rem;
-}
-
-.como-llegar-contenedor {
-    display: flex;
-    align-items: center;
-}
-
-.como-llegar-contenedor img {
-    margin: 10px;
 }
 
 
@@ -536,7 +541,7 @@ footer p {
         width: 100%;
         height: 400px;
     }
-    .como-llegar-contenedor {
+    .contacto-contenedor {
         display: flex;
         align-items: center;
         justify-content: center;
