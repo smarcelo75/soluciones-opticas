@@ -1,0 +1,27 @@
+/* header */
+
+header {
+    position: sticky;
+    top: 0px;
+    nav {
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+    }
+    .logo {
+        margin-left: 10px;
+        margin-right: 20px;
+        img {
+            width: 80px;
+        }
+    }
+    .iconos-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

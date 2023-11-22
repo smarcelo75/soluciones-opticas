@@ -1,0 +1,62 @@
+/* Selector universal */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* bootstrap sobreescritos */
+
+.navbar {
+    font-family: $font;
+    font-size: 16px;
+    align-items: center;
+}
+
+.btn {
+    font-size: 16px;
+}
+
+.form-control {
+    font-size: 16px;
+}
+
+.form-label {
+    font-size: 16px;
+}
+
+
+/* elementos genéricos */
+
+.titulo {
+    margin: 35px 35px 35px 0px;
+}
+
+.subtitulos {
+    text-align: center;
+    margin: 25px;
+}
+
+
+/* html */
+
+html {
+    font-family: $font;
+    font-size: 62.5%;
+    /*1rem=16px*/
+    /*1rem=10px*/
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,23 @@
+/* como llegar */
+
+.como-llegar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .como-llegar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .como-llegar-mapa {
+            width: 60%;
+            height: 400px;
+            padding: 30px;
+        }
+        .como-llegar-texto {
+            width: 40%;
+            padding: 30px;
+        }
+    }
+}

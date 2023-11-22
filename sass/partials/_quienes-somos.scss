@@ -1,0 +1,50 @@
+/* quienes somos*/
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "img1 texto1 texto1" "img1 img2 img2" "texto2 img3 texto3";
+    /* ancho de las columnas*/
+    grid-template-columns: 25% 40% 25%;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 150px 300px 300px;
+    justify-content: space-between;
+    /* alineacion de grids */
+    justify-items: center;
+    align-items: center;
+    /* espacio entre filas */
+    row-gap: 30px;
+    /* espacio entre columnas */
+    column-gap: 10px;
+    margin-bottom: 30px;
+    img {
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+.grid-img-1 {
+    grid-area: img1;
+}
+
+.grid-img-2 {
+    grid-area: img2;
+}
+
+.grid-img-3 {
+    grid-area: img3;
+}
+
+.grid-texto-1 {
+    grid-area: texto1;
+    text-align: justify;
+}
+
+.grid-texto-2 {
+    grid-area: texto2;
+    text-align: right;
+}
+
+.grid-texto-3 {
+    grid-area: texto3;
+    text-align: justify;
+}

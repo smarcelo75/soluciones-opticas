@@ -82,6 +82,7 @@ header .iconos-header {
   margin-right: 10px;
 }
 
+/* index */
 .banner {
   background-image: url(../images/banner.png);
   background-position: center;
@@ -231,6 +232,120 @@ header .iconos-header {
   text-align: justify;
 }
 
+/* productos */
+.productos div {
+  background-color: rgb(244, 248, 248);
+  padding-bottom: 20px;
+}
+.productos img {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+/* contacto */
+.imagenContacto {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+}
+
+.imagenIconoContacto {
+  width: 30px;
+}
+
+.contacto-texto {
+  width: 100%;
+  padding: 30px;
+}
+.contacto-texto .contacto-contenedor {
+  display: flex;
+  align-items: center;
+}
+.contacto-texto .contacto-contenedor p {
+  text-align: left;
+  font-size: 1.5rem;
+}
+.contacto-texto .contacto-contenedor img {
+  margin: 10px;
+}
+
+.form-control {
+  font-size: 16px;
+}
+
+/* como llegar */
+.como-llegar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.como-llegar-container .como-llegar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.como-llegar-container .como-llegar .como-llegar-mapa {
+  width: 60%;
+  height: 400px;
+  padding: 30px;
+}
+.como-llegar-container .como-llegar .como-llegar-texto {
+  width: 40%;
+  padding: 30px;
+}
+
+/* quienes somos*/
+.grid-container {
+  display: grid;
+  grid-template-areas: "img1 texto1 texto1" "img1 img2 img2" "texto2 img3 texto3";
+  /* ancho de las columnas*/
+  grid-template-columns: 25% 40% 25%;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-rows: 150px 300px 300px;
+  justify-content: space-between;
+  /* alineacion de grids */
+  justify-items: center;
+  align-items: center;
+  /* espacio entre filas */
+  row-gap: 30px;
+  /* espacio entre columnas */
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+.grid-container img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.grid-img-1 {
+  grid-area: img1;
+}
+
+.grid-img-2 {
+  grid-area: img2;
+}
+
+.grid-img-3 {
+  grid-area: img3;
+}
+
+.grid-texto-1 {
+  grid-area: texto1;
+  text-align: justify;
+}
+
+.grid-texto-2 {
+  grid-area: texto2;
+  text-align: right;
+}
+
+.grid-texto-3 {
+  grid-area: texto3;
+  text-align: justify;
+}
+
 /* footer */
 footer img {
   width: 30px;
@@ -280,6 +395,132 @@ footer p {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+/* mobile */
+@media only screen and (max-width: 480px) {
+  header {
+    /* solo cambio la propiedad que quiero cambiar */
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    width: 100%;
+  }
+  header ul {
+    margin-left: 8px;
+  }
+  /* index */
+  .presentacion-item {
+    width: 100%;
+  }
+  .productos-destacados-item {
+    width: 100%;
+    height: 350px;
+  }
+  .productos-recomendados-item {
+    width: 100%;
+    height: 500px;
+  }
+  .comentarios-item {
+    width: 100%;
+  }
+  /* donde estamos */
+  .donde-estamos-container .donde-estamos {
+    flex-direction: column;
+  }
+  .donde-estamos-container .donde-estamos .donde-estamos-item {
+    width: 100%;
+    padding: 5px 5px 10px;
+  }
+  .donde-estamos-container .donde-estamos .donde-estamos-mapa {
+    height: 400px;
+  }
+  /* como llegar */
+  .como-llegar-container .como-llegar {
+    flex-direction: column;
+  }
+  .como-llegar-container .como-llegar .como-llegar-texto {
+    width: 100%;
+    padding: 5px 5px 10px;
+  }
+  .como-llegar-container .como-llegar .como-llegar-mapa {
+    width: 100%;
+    height: 400px;
+  }
+  .contacto-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* quienes somos */
+  .grid-container {
+    grid-template-areas: "img2" "texto1" "texto2" "img3" "texto3";
+    grid-template-columns: 90%;
+    grid-template-rows: 100px 150px repeat(3, 200px);
+  }
+  .grid-img-1 {
+    display: none;
+  }
+  .grid-texto-2 {
+    text-align: justify;
+  }
+  /*footer*/
+  .footer-container .footer-container-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container .footer-container-copyright {
+    align-items: center;
+  }
+  .footer-container .footer-container-copyright-dev {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* tablet */
+@media only screen and (min-width: 481px) and (max-width: 992px) {
+  /* donde estamos */
+  .donde-estamos-container .donde-estamos {
+    flex-direction: column;
+  }
+  .donde-estamos-container .donde-estamos .donde-estamos-item {
+    width: 100%;
+    padding: 25px;
+  }
+  .donde-estamos-container .donde-estamos .donde-estamos-mapa {
+    height: 400px;
+  }
+  /* como llegar */
+  .como-llegar-container .como-llegar {
+    flex-direction: column;
+  }
+  .como-llegar-container .como-llegar .como-llegar-texto {
+    width: 100%;
+    padding: 5px 5px 10px;
+  }
+  .como-llegar-container .como-llegar .como-llegar-mapa {
+    width: 100%;
+    height: 400px;
+  }
+  .contacto-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* quienes somos */
+  .grid-container {
+    grid-template-areas: "img2" "texto1" "texto2" "img3" "texto3";
+    grid-template-columns: 90%;
+    grid-template-rows: 100px 150px repeat(3, 200px);
+  }
+  .grid-img-1 {
+    display: none;
+  }
+  .grid-texto-2 {
+    text-align: justify;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
