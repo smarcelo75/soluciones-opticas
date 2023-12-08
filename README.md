@@ -3,6 +3,9 @@
 ## Entrega Final
 - banner.png con un ahorro en peso de 75%!!
 ![banner.png](/images/ahorro-banner.png)
+- metadata description y keywords
+- titulos personalizados
+- ALT
 
 ## Uso de Bootstrap
 - Se usa en el header de todas las páginas para armar el menu responsivo.
