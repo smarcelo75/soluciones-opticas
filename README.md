@@ -1,5 +1,9 @@
 # Sitio Web - Soluciones Ópticas
 
+## Entrega Final
+- banner.png con un ahorro en peso de 75%!!
+![banner.png](/images/ahorro-banner.png)
+
 ## Uso de Bootstrap
 - Se usa en el header de todas las páginas para armar el menu responsivo.
 - index.html
